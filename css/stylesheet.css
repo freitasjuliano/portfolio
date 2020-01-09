@@ -62,6 +62,13 @@ h1 {
 }
  
 /* trabalhos*/
+
+.tudao {
+  display: grid;
+  grid-template-columns: 100%;
+
+}
+
 .container {
     margin-top: 3%;
     width: 80%;
@@ -98,7 +105,7 @@ h1 {
   .modal {
     display:none;
     position:fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     height: 100%;
@@ -167,12 +174,11 @@ h1 {
     color: #f4f4f4;
     margin-bottom: 8%;
   }
-  .modal-content img {
-      margin-bottom: 10px;
-      
-  }
+  
 /* Trabalho 2 */
-
+.short{
+  display: none;
+}
 .container2 {
   margin-top: 3%;
   width: 80%;
@@ -209,7 +215,7 @@ h1 {
 .modal2 {
   display:none;
   position:fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   height: 100%;
@@ -287,7 +293,7 @@ font-weight:bolder;
 .modal3 {
   display:none;
   position:fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   height: 100%;
@@ -309,6 +315,16 @@ font-weight:bolder;
   margin: 0 auto;
   overflow: auto;
  }
+
+ /* projeto 4 */
+.container4 {
+  margin-top: 3%;
+  width: 80%;
+  position:relative;
+}
+.hide {
+  display: none;
+}
 
   /* Sobre */
 
@@ -345,9 +361,129 @@ footer img {
 
 footer img:hover{
   opacity: 0.7;
+ }
 
+@media only screen and (min-width: 768px) {
+  /* tablets */
+  .tudao {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
   
+ /* header */
+  .header-principal a {
+    font-size: 22px;
+    padding: 30px 40px;
+  }
+  /* index */
+  .minhafoto{
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 40%;
+    top: 45%;
+    transform: translate(-45%, -40%)
 }
 
+h1 {
+    font-family: montserrat;
+    font-size: 2.3rem;
+    color: white;
+}
+.texto{
+    position: absolute;
+    display: block;
+    left: 45%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+    min-width: 200px;
+}
+/* trabalhos */
 
 
+
+  /*sobre*/
+  .sobre {
+    font-size: 30px;
+    padding: 5% 10% 2% 10%;
+    line-height: 1.5em;
+    
+  }
+  
+  footer img {
+    width: 70px;
+      height: 70px;
+      margin: 2rem;
+      
+  }
+  
+  }
+  @media only screen and (min-width: 1024px) {
+    /* header */
+  .header-principal a {
+    font-size: 28px;
+    padding: 30px 40px;
+  }
+     
+    .cabecalho, .cabecalho2{
+    height: 60px;  
+    }
+
+    .button{
+      margin-top: 9px;
+    font-size: 43px;
+    }
+
+    h1 {
+      font-family: montserrat;
+      font-size: 3.3rem;
+      color: white;
+  }
+
+  .texto{
+      position: absolute;
+      display: block;
+      left: 45%;
+      top: 65%;
+      transform: translate(-50%, -65%);
+      min-width: 200px;
+  }
+
+  .descricao{
+    font-size: 21px;
+  }
+   /*sobre*/
+   .sobre {
+     
+    font-size: 40px;
+    padding: 5% 10% 6% 10%;
+    line-height: 1.5em;
+    
+  }
+  
+  footer img {
+    width: 80px;
+      height: 80px;
+      margin: 2rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+ /*home*/
+    h1 {
+      font-family: montserrat;
+      font-size: 4rem;
+      color: white;
+  }
+
+  .texto{
+      position: absolute;
+      display: block;
+      left: 42%;
+      top: 69%;
+      transform: translate(-50%, -65%);
+      min-width: 200px;
+
+
+
+  }
