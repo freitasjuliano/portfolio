@@ -8,24 +8,24 @@
     font-family: montserrat;
     
 }
+
 @font-face{
     src: url(../fonts/Montserrat-Regular.ttf);
     font-family: montserrat-regular;
     
 }
+
 @font-face{
   src: url(../fonts/clarendon-lt-std-roman.otf);
   font-family: Clarendon;
-  
 }
 
 .header-principal {
     display: flex;
     text-decoration: none;
     background-color: #D34444;
-    -webkit-box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.14);
-    box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.14);
+    text-align: right;
+    
 }
 
 .header-principal a {
@@ -33,10 +33,19 @@
     text-decoration:none;
     color:white;
     display: inline-block;
-    padding: 20px 20px;
-    
-    
+    padding: 20px 10px;
+    text-align: right;
 }
+
+.header-principal a:hover {
+  color: #F4D8CD;
+}
+
+#nome:hover {
+  color: #F4D8CD;
+  transition: .5s ease;
+}
+
 body{
     background-color:  #D34444;
 }
@@ -62,11 +71,11 @@ body{
       }
 }
 
-
 h1 {
     font-family: montserrat;
     font-size: 1.6rem;
-    color: white;
+    color:white;
+    margin-top: 0.1em;
 }
 .texto{
     position: absolute;
@@ -94,25 +103,40 @@ h1 {
       }
 }
  
-
-
-
 /* trabalhos*/
-
 .tudao {
   display: grid;
   grid-template-columns: 100%;
+  }
 
+                          /* Projeto 1 */
+
+  .entreprojetos span {
+    font-family: montserrat-regular;
+    font-weight: bolder;
+    color:#EAC9C9;
+    font-size: 1em;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 20px !important ;                      
 }
-
+                          
+    .entreprojetos span a {
+    font-size: 1.3em;
+    color: #EAC9C9;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+                          
 .container {
     margin-top: 3%;
     width: 80%;
     position:relative;
-  }
+}
+
   .container:hover .overlay {
     opacity: 0.7;
-    }
+}
   
   .overlay {
     position: absolute;
@@ -124,7 +148,7 @@ h1 {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #F4D8CD;
   }
   
   .jazz {
@@ -163,21 +187,20 @@ h1 {
     margin: 0 auto;
     overflow: auto;
    }
+
   .button {
     color: white;
     float: right;
     font-size: 33px;
     margin-right: 3%;
-    
-    
-  }
+}
   
   .button:hover,.button:focus {
   color:#008CBA;
   text-decoration:none;
   cursor:pointer; 
   font-weight:bolder;
-  }
+}
   
   .cabecalho, .cabecalho2 {
     position: sticky;
@@ -185,27 +208,28 @@ h1 {
     background-color: #D34444;
     background-size: cover;
     height: 40px;
-  }
+}
 .nomeprojeto{
     text-align: center;
     padding: 2.5%;
     color:white;
-  }
+}
 
-.entreprojetos, .entreprojetos2 {
+.entreprojetos {
+      display: inline-block;
       text-align: left;
       margin-top: 2%;
-      width: 80%;
+      margin-left: 10%;
       margin-bottom: 2%;
-  }
+}
 
   .descricao{
     width: 80%;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: #f4f4f4;
+    color: white;
     margin-bottom: 8%;
-  }
+}
   
 /* Trabalho 2 */
 .short{
@@ -216,9 +240,10 @@ h1 {
   width: 80%;
   position:relative;
 }
+
 .container2:hover .overlay {
   opacity: 0.7;
-  }
+}
 
 .overlay {
   position: absolute;
@@ -230,7 +255,7 @@ h1 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #F4D8CD;
 }
 
 .video1 {
@@ -269,6 +294,7 @@ h1 {
   margin: 0 auto;
   overflow: auto;
  }
+
 .button {
   color: white;
   float: right;
@@ -277,7 +303,7 @@ h1 {
 }
 
 .button:hover,.button:focus {
-color:#008CBA;
+color:rgb(186, 121, 0);
 text-decoration:none;
 cursor:pointer; 
 font-weight:bolder;
@@ -300,7 +326,9 @@ font-weight:bolder;
 .modal-content img {
     margin-bottom: 10px;
     }
+
 /* projeto 3 */
+
 .container3 {
   margin-top: 3%;
   width: 80%;
@@ -309,7 +337,6 @@ font-weight:bolder;
 .container3:hover .overlay {
   opacity: 0.7;
   }
-
 
 .video1 {
   margin: 50% auto;
@@ -339,7 +366,7 @@ font-weight:bolder;
   box-shadow: 0 5px 8px 0 rgba (0,0,0,0.3), 0 7px 25px 0 rgba(0,0,0,0.4);
   margin: 0 auto;
   overflow: auto;
- }
+}
 
  /* projeto 4 */
 .container4 {
@@ -347,42 +374,154 @@ font-weight:bolder;
   width: 80%;
   position:relative;
 }
+
+  .bg {
+    height: 100%;
+    width: 100%;
+}
+
 .hide {
   display: none;
 }
 
+#portraith {
+  display: none;
+}
+
+#bskth {
+  display: none;
+}
+
+#cjh {
+  display: none;
+}
+
+.blink {
+  animation: blink 2s ease-in infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+
+} 
+
   /* Sobre */
+  .bodyConteudos{
+    height: 100vh;
+    max-width: 1200px;
+    
+  }
+
+.cta {
+  display: flex;
+  background-color: white;
+  width: 40%;
+  padding: 15px 40px;
+  color: #D34444;
+  border: none;
+  font-family: 'Noto Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.cta:hover {
+  background-color: #2a6bda;
+  color: white;
+  transition: .3s ease;
+}
+
+.midias {
+    font-family: 'Merriweather', serif;
+    text-decoration:none;
+    color:white;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.midias a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.midias a:hover {
+  color: #F4D8CD;
+}
+
+  .perfil {
+    display: block;
+    margin:0 auto;
+    width: 66vw    
+  }
 
 .sobre {
-    font-size: 1.3rem;
-    color: white;
-    padding: 10% 10%;
-    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    color:white;
+    padding: 2% 5%;
+    font-family: 'Cousine', monospace;
+    border: none;
+    line-height: 150%
 }
 
 .sobre a {
-    text-decoration: none;
-    color: white;    
+    
+    color: #F4D8CD; 
+    margin: auto;   
+    font-weight: bolder;
 }
 
  .sobre a:hover {
-    background-color: yellow;
+    color:#2a6bda;
+    transition: .3s ease;
   }
 
-  footer{
-  display: grid;
-  justify-content: center;
+.topo {
+width: 80%;
+}
+
+  .conteudos{
+  display: inline;
+  
   }
   
-footer img {
-  width: 50px;
-    height: 50px;
-    margin: 1rem;
-  }
+  footer{
+    display: grid;
+    justify-content: center;
+    }
+    
+  footer img {
+    width: 50px;
+      height: 50px;
+      margin: 1rem;
+    }
+  
+  footer img:hover{
+    opacity: 0.7;
+    }
 
-footer img:hover{
-  opacity: 0.7;
-  }
+
+    @media only screen and (min-width: 250px) {
+    
+      .side_text {
+        width: 80%;   
+      }
+
+      .side_text p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .cta {
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    
+    }
 
 @media only screen and (min-width: 768px) {
   /* tablets */
@@ -408,8 +547,13 @@ footer img:hover{
 
 h1 {
     font-family: montserrat;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: white;
+}
+
+#nome {
+  font-size: 2.3rem;
+
 }
 .texto{
     position: absolute;
@@ -419,21 +563,31 @@ h1 {
     transform: translate(-50%, -65%);
     min-width: 200px;
 }
-/* trabalhos */
-
-
 
   /*sobre*/
   .sobre {
     font-size: 30px;
-    padding: 5% 10% 2% 10%;
+    padding: 0 10% 2% 10%;
     line-height: 1.5em;  
   }
   
-  footer img {
-    width: 70px;
-      height: 70px;
-      margin: 2rem;
+  
+  .side_text {
+    width: 80%;   
+  }
+
+
+  .cta {
+    margin-top: 15px;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-left: 61.4px;
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .perfil {
+  width: 500px;
   }
   
   }
@@ -448,16 +602,27 @@ h1 {
     height: 60px;  
     }
 
+    .descricao p {
+      font-size: 25px;
+    }
+
+
+
     .button{
       margin-top: 9px;
-    font-size: 43px;
+      font-size: 43px;
     }
 
     h1 {
       font-family: montserrat;
-      font-size: 3.3rem;
+      font-size: 2.2rem;
       color: white;
   }
+
+  #nome {
+    font-size: 4rem;
+  }
+
 
   .texto{
       position: absolute;
@@ -478,27 +643,138 @@ h1 {
     line-height: 1.5em;
   }
   
-  footer img {
+  .conteudos img {
     width: 80px;
       height: 80px;
       margin: 2rem;
   }
-  }
-  @media only screen and (min-width: 1024px) {
+.midias {
+  font-size: 33px;
+  margin-top: 15px;
+}
+ 
+}
 
- /*home*/
-    h1 {
-      font-family: montserrat;
-      font-size: 4rem;
-      color: white;
-  }
+@media only screen and (min-width: 1200px) {
 
-  .texto{
-      position: absolute;
-      display: block;
-      left: 42%;
-      top: 69%;
-      transform: translate(-50%, -65%);
-      min-width: 200px;
-  }
+ /* index */
+  .minhafoto{
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 17%;
+    top: 45%;
+    transform: translate(-45%, -40%)
+}
+
+h1 {
+    font-family: montserrat;
+    font-size: 2.3rem;
+    color: white;
+}
+
+#nome {
+  font-size: 3em;
+}
+
+.tudao {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+}
+
+
+.texto{
+    position: absolute;
+    display: block;
+    left: 45%;
+    top: 65%;
+    transform: translate(-40%, -36%);
+    min-width: 200px;
+    animation: yourAnimation4 1.2s  0s ease;
+}
+
+.modal img{
+  width: 1200px;
+  
+}
+
+.cabecalho, .cabecalho2 {
+ width: 1200px;
+}
+
+@keyframes yourAnimation4{
+  0%{
+      transform: translate(-40%,0%);
+      opacity: 0;
+      }
+      20%{
+        transform: translate(-40%,0%);
+        opacity: 0;
+        }
+
+  100%{
+      transform: translate(-40%,-36%);
+      opacity: 1;
+      }
+}
+#portrait {
+  display: none;
+}
+#portraith {
+  display: flex;
+}
+
+#bskt {
+  display: none;
+}
+
+#bskth {
+  display: flex;
+}
+
+#cj {
+  display: none;
+}
+
+#cjh {
+display: flex;
+}
+
+/*sobre*/
+.sobre {
+  
+  font-size: 25px;
+  padding: 0 10% 6% 10%;
+  line-height: 1.5em;
+
+}
+
+.sobre_conteudo {
+margin-top: 40px;
+}
+
+.perfil {
+  float: left;
+  margin: 0;
+  
+}
+
+.side_text {
+  float: right ;
+  width: 700px;
+  height: 450px;
+}
+
+.conteudos img {
+  width: 80px;
+    height: 80px;
+    margin: 2rem;
+}
+
+.midias {
+  width: 600px;
+}
+
+
 }
